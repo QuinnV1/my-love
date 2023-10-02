@@ -1,0 +1,71 @@
+body {
+    background-image: url('../Img/2131.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 844px; /* Высота iPhone 12 */
+    width: 390px; /* Ширина iPhone 12 */
+}
+
+button#showModal {
+    background: #db3455;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 60px; /* Расположение блока относительно кнопки */
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.modal-content {
+    padding: 10px;
+    max-height: 700px; /* Максимальная высота блока с фотографиями */
+    overflow-y: scroll; /* Добавляет вертикальную прокрутку для содержимого */
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photos img {
+    width: 100%;
+    max-width: 300px; /* Ширина фотографий */
+    height: auto;
+    margin-bottom: 10px;
+}
+.close-button {
+    position: absolute;
+    top: -2%;
+    right: -5%;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.close-button:hover {
+    background: #ccc;
+}
